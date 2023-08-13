@@ -28,6 +28,10 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use("/", require("./routes/root"));
 // router - employees
 app.use("/employees", require("./routes/api/employees"));
+// register
+app.use("/register", require("./routes/register"));
+// auth
+app.use("/auth", require("./routes/auth"));
 
 // Cross Origin Resource Sharing
 const cors = require("cors");

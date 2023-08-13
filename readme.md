@@ -9,3 +9,7 @@ Following previous practice: Basic_MVC - https://github.com/ChiaWei024/Basic_MVC
 # Content
 
 1.  Basic Auth with bcrypt
+    - Hash the password
+    - Auth: compare password (bcrypt.compare(pwd, hashedPwd))
+
+Next will use JWT auth to create protected routes.
